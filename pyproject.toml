@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nextread"
+version = "0.1.0"
+description = "A command-line reading list in a plain-text file you can edit by hand."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+nextread = "nextread.cli:main"
+
+[tool.setuptools]
+packages = ["nextread"]
